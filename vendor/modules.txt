@@ -1,0 +1,5 @@
+# github.com/mozilla-services/pkcs7 v0.0.0-20181213175627-3cffc6fbfe83
+github.com/mozilla-services/pkcs7
+# golang.org/x/xerrors v0.0.0-20191011141410-1b5146add898
+golang.org/x/xerrors
+golang.org/x/xerrors/internal
