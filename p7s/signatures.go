@@ -16,7 +16,9 @@ type Signatures struct{}
 func (s *Signatures) Parse(data []byte) (*signatures.Signature, error) {
 	sign, err := pkcs7.Parse(data)
 	if err != nil {
-		return nil, xerrors.Errorf("signature parsing error: %w", err)
+		err = xerrors.Errorf("signature parsing error as 'PKCS #7': content does not match 'ASN.1' structure "+
+			"format, more details: %w", err)
+		return nil, err
 	}
 
 	return &signatures.Signature{
