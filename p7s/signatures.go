@@ -3,8 +3,8 @@
 package v1
 
 import (
+	"github.com/fullsailor/pkcs7"
 	"github.com/golang-mixins/signatures"
-	"github.com/mozilla-services/pkcs7"
 	"golang.org/x/xerrors"
 )
 
