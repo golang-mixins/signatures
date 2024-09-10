@@ -16,7 +16,9 @@ type Signature struct {
 // SignatureParser provides signature parsing interface.
 type SignatureParser interface {
 	// Parse - parsing signatures into the structure according to the standards required by interface.
-	Parse(data []byte) (*Signature, error)
+	Parse(data []byte) (Signature, error)
+	// Extract - extractes and parses the signature as BASE64 or PEM or DER, providing the result or an error.
+	Extract(data []byte) (Signature, error)
 	// Ext - provides an extension for signature, according to the requirements of the interface.
 	Ext() string
 }
