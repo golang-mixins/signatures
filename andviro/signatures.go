@@ -1,6 +1,6 @@
 // Package andviro represents the interface signatures implementation.
 // Implements signature parsing as PKCS#7 with content in ASN.1.
-package v1
+package andviro
 
 import (
 	"encoding/base64"
